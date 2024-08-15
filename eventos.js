@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const contenedor = document.querySelector('#boton');
+
+    const divBoton = document.querySelector('#boton');
     const boton = document.querySelector('#miBoton');
 
-    contenedor.style.padding = '5px';
-    contenedor.style.backgroundColor = 'green';
+    divBoton.style.padding = '5px';
+    divBoton.style.backgroundColor = 'green';
 
-    contenedor.addEventListener('click', function() {
-        alert('¡Hola! Soy el div');
-    });
+    function mostrarAlerta() {
+        alert('Hola! Soy el div');
+    }
+
+    boton.addEventListener('click', mostrarAlerta);
 });
